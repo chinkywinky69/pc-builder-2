@@ -5,7 +5,7 @@
     <div v-else class="fade-in">
       <div>
         <div class="text-center text-secondary q-ma-lg for-desktop soulmaze">
-          <h2 class="q-ma-none">select PC Type a</h2>
+          <h2 class="q-ma-none">select PC Type</h2>
         </div>
         <div class="text-center text-secondary q-ma-lg for-mobile soulmaze">
           <h4 class="q-ma-none">select PC Type</h4>
