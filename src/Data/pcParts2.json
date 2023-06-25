@@ -1,0 +1,409 @@
+{
+  "workStudies": {
+    "parts": [
+      {
+        "id": 1,
+        "type": "CPU",
+        "brand": "Intel",
+        "model": "Core i5 11400K",
+        "description": "The Intel Core i5-11400 is a powerful processor designed for work and studying tasks. With its 6 cores and 12 threads, it offers excellent multitasking capabilities and smooth performance. It has a base frequency of 2.60 GHz and a maximum turbo frequency of 4.40 GHz, allowing for fast and responsive computing. The Core i5-11400 is compatible with the LGA1200 socket and offers great value for its price.",
+        "socket": "FCLGA1200",
+        "performanceRating": 7.5,
+        "price": 7995.0,
+        "img": "src/assets/img/CPU/1.png"
+      },
+      {
+        "id": 2,
+        "type": "GPU",
+        "brand": "",
+        "model": "None",
+        "description": "No dedicated GPU is required for work and studies tasks as the integrated graphics of the CPU will be sufficient.",
+        "performanceRating": 7,
+        "price": 0.0,
+        "img": "src/assets/img/GPU/1.png"
+      },
+      {
+        "id": 3,
+        "type": "Motherboard",
+        "brand": "Gigabyte",
+        "model": "B560M DS3H",
+        "description": "The Gigabyte B560M DS3H is a reliable motherboard that provides essential features and compatibility for the Intel Core i5 1100K processor. It offers a stable platform for your work and studies PC build.",
+        "compatibility": "FCLGA1200",
+        "performanceRating": 8,
+        "price": 6495.0,
+        "img": "src/assets/img/Mobo/1.png"
+      },
+      {
+        "id": 4,
+        "type": "Power supply",
+        "brand": "Corsair",
+        "model": "CX550F",
+        "description": "The Corsair CX550F is a high-quality power supply unit designed to deliver reliable and efficient power to your PC components. With a maximum power output of 550W, it provides ample power for your system.",
+        "performanceRating": 8,
+        "price": 4450.0,
+        "img": "src/assets/img/Powersupply/1.png"
+      },
+      {
+        "id": 5,
+        "type": "RAM",
+        "brand": "Kingston",
+        "model": "Fury Beast 8GB",
+        "description": "The Kingston Fury Beast 8GB RAM stick offers decent memory capacity for your work and studies tasks. It provides smooth performance and reliable multitasking capabilities.",
+        "capacity": "8GB",
+        "performanceRating": 6,
+        "price": 1295.0,
+        "img": "src/assets/img/RAM/1.png"
+      }
+    ]
+  },
+  "gaming": {
+    "parts": [
+      {
+        "id": 1,
+        "type": "CPU",
+        "brand": "Intel",
+        "model": "Core i7 10700K",
+        "description": "The Intel Core i7 10700K is a high-performance processor suitable for gaming. With its 8 cores and 16 threads, it delivers excellent gaming performance and multitasking capabilities.",
+        "socket": "FCLGA1200",
+        "performanceRating": 9,
+        "price": 20500.0,
+        "img": "src/assets/img/CPU/2.png"
+      },
+      {
+        "id": 2,
+        "type": "GPU",
+        "brand": "MSI",
+        "model": "GeForce RTX 3070 Ti",
+        "description": "The MSI GeForce RTX 3070 Ti is a high-performance graphics card designed for gaming enthusiasts. It features the latest NVIDIA Ampere architecture, delivering exceptional gaming performance and stunning visuals.",
+        "performanceRating": 9,
+        "price": 38850.0,
+        "img": "src/assets/img/GPU/2.png"
+      },
+      {
+        "id": 3,
+        "type": "Motherboard",
+        "brand": "ASUS",
+        "model": "ROG Strix Z490-E Gaming",
+        "description": "The ASUS ROG Strix Z490-E Gaming is a high-end motherboard designed for gaming enthusiasts. It offers advanced features, excellent performance, and extensive connectivity options for your gaming PC build.",
+        "compatibility": "FCLGA1200",
+        "performanceRating": 9,
+        "price": 18000.0,
+        "img": "src/assets/img/Mobo/2.png"
+      },
+      {
+        "id": 4,
+        "type": "Power Supply",
+        "brand": "Corsair",
+        "model": "RM750x",
+        "description": "The Corsair RM750x power supply is a reliable and efficient choice for your gaming PC. With its 750W power output, it provides sufficient power for your components and supports high-end GPUs.",
+        "performanceRating": 9,
+        "price": 8295.0,
+        "img": "src/assets/img/Powersupply/2.png"
+      },
+      {
+        "id": 5,
+        "type": "RAM",
+        "brand": "Corsair",
+        "model": "Vengeance RGB Pro 32GB (2 x 16GB)",
+        "description": "The Corsair Vengeance RGB Pro 32GB RAM kit consists of two 16GB modules. It offers ample memory capacity for gaming, allowing smooth multitasking and providing headroom for future game releases.",
+        "capacity": "32GB (2 x 16GB)",
+        "performanceRating": 8,
+        "price": 7395.0,
+        "img": "src/assets/img/RAM/2.png"
+      }
+    ]
+  },
+  "editing": {
+    "parts": [
+      {
+        "id": 1,
+        "type": "CPU",
+        "brand": "AMD",
+        "model": "Ryzen 9 5900X",
+        "description": "The AMD Ryzen 9 5900X is a high-performance processor specifically designed for editing tasks. With its 12 cores and 24 threads, it delivers exceptional multi-threaded performance, ideal for demanding editing software.",
+        "socket": "AM4",
+        "performanceRating": 10,
+        "price": 19950.0,
+        "img": "src/assets/img/CPU/3.png"
+      },
+      {
+        "id": 2,
+        "type": "GPU",
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 3080",
+        "description": "The NVIDIA GeForce RTX 3080 is a top-of-the-line graphics card suitable for editing tasks. It provides powerful GPU acceleration, enabling faster rendering and real-time editing in high-resolution projects.",
+        "performanceRating": 10,
+        "price": 41000.0,
+        "img": "src/assets/img/GPU/3.png"
+      },
+      {
+        "id": 3,
+        "type": "Motherboard",
+        "brand": "MSI",
+        "model": "MPG X570 Gaming Pro Carbon WiFi",
+        "description": "The MSI MPG X570 Gaming Pro Carbon WiFi is a feature-rich motherboard that supports the AMD Ryzen 9 5900X processor. It offers excellent connectivity options, advanced power delivery, and stability for editing-intensive workloads.",
+        "compatibility": "AM4",
+        "performanceRating": 9,
+        "price": 15000.0,
+        "img": "src/assets/img/Mobo/3.png"
+      },
+      {
+        "id": 4,
+        "type": "Power Supply",
+        "brand": "Seasonic",
+        "model": "Focus GX-1000",
+        "description": "The Seasonic Focus GX-1000 power supply is a high-quality unit suitable for editing PCs. With its 1000W power output, it provides ample power for the components, ensuring stability and efficiency during intense editing tasks.",
+        "performanceRating": 9,
+        "price": 9295.0,
+        "img": "src/assets/img/Powersupply/3.png"
+      },
+      {
+        "id": 5,
+        "type": "RAM",
+        "brand": "Corsair",
+        "model": "Vengeance RGB Pro 16GB (2 x 8GB)",
+        "description": "The Corsair Vengeance RGB Pro 16GB RAM kit consists of two 8GB modules. It offers fast and reliable memory performance, enabling smooth editing workflows and efficient handling of large media files.",
+        "capacity": "16GB (2 x 8GB)",
+        "performanceRating": 8,
+        "price": 4595.0,
+        "img": "src/assets/img/RAM/3.png"
+      }
+    ]
+  },
+
+  "custom": {
+    "cpu": [
+      {
+        "id": 16,
+        "type": "",
+        "brand": "",
+        "model": "Select CPU",
+        "description": "",
+        "socket": "",
+        "performanceRating": 0,
+        "price": 0,
+        "img": "src/assets/img/cpu.png",
+        "disabled": false
+      },
+      {
+        "id": 1,
+        "type": "CPU",
+        "brand": "Intel",
+        "model": "Core i5 11400K",
+        "description": "The Intel Core i5-11400 is a powerful processor designed for work and studying tasks. With its 6 cores and 12 threads, it offers excellent multitasking capabilities and smooth performance. It has a base frequency of 2.60 GHz and a maximum turbo frequency of 4.40 GHz, allowing for fast and responsive computing. The Core i5-11400 is compatible with the LGA1200 socket and offers great value for its price.",
+        "socket": "FCLGA1200",
+        "performanceRating": 7.5,
+        "price": 7995.0,
+        "img": "src/assets/img/CPU/1.png",
+        "disabled": false
+      },
+      {
+        "id": 2,
+        "type": "CPU",
+        "brand": "Intel",
+        "model": "Core i7 10700K",
+        "description": "The Intel Core i7 10700K is a high-performance processor suitable for gaming. With its 8 cores and 16 threads, it delivers excellent gaming performance and multitasking capabilities.",
+        "socket": "FCLGA1200",
+        "performanceRating": 9,
+        "price": 20500.0,
+        "img": "src/assets/img/CPU/2.png",
+        "disabled": false
+      },
+      {
+        "id": 3,
+        "type": "CPU",
+        "brand": "AMD",
+        "model": "Ryzen 9 5900X",
+        "description": "The AMD Ryzen 9 5900X is a high-performance processor specifically designed for editing tasks. With its 12 cores and 24 threads, it delivers exceptional multi-threaded performance, ideal for demanding editing software.",
+        "socket": "AM4",
+        "performanceRating": 10,
+        "price": 19950.0,
+        "img": "src/assets/img/CPU/3.png",
+        "disabled": false
+      }
+    ],
+    "gpu": [
+      {
+        "id": 17,
+        "type": "",
+        "brand": "",
+        "model": "Select GPU",
+        "description": "",
+        "socket": "",
+        "performanceRating": 0,
+        "price": 0,
+        "img": "src/assets/img/gpu.png"
+      },
+      {
+        "id": 4,
+        "type": "GPU",
+        "brand": "",
+        "model": "None",
+        "description": "No dedicated GPU is required for work and studies tasks as the integrated graphics of the CPU will be sufficient.",
+        "performanceRating": 7,
+        "price": 0.0,
+        "img": "src/assets/img/GPU/1.png"
+      },
+      {
+        "id": 5,
+        "type": "GPU",
+        "brand": "MSI",
+        "model": "GeForce RTX 3070 Ti",
+        "description": "The MSI GeForce RTX 3070 Ti is a high-performance graphics card designed for gaming enthusiasts. It features the latest NVIDIA Ampere architecture, delivering exceptional gaming performance and stunning visuals.",
+        "performanceRating": 9,
+        "price": 38850.0,
+        "img": "src/assets/img/GPU/2.png"
+      },
+      {
+        "id": 6,
+        "type": "GPU",
+        "brand": "NVIDIA",
+        "model": "GeForce RTX 3080",
+        "description": "The NVIDIA GeForce RTX 3080 is a top-of-the-line graphics card suitable for editing tasks. It provides powerful GPU acceleration, enabling faster rendering and real-time editing in high-resolution projects.",
+        "performanceRating": 10,
+        "price": 41000.0,
+        "img": "src/assets/img/GPU/3.png"
+      }
+    ],
+    "motherboard": [
+      {
+        "id": 18,
+        "type": "",
+        "brand": "",
+        "model": "Select Motherboard",
+        "description": "",
+        "compatibility": "",
+        "socket": "",
+        "performanceRating": 0,
+        "price": 0,
+        "img": "src/assets/img/motherboard.png",
+        "disabled": false
+      },
+      {
+        "id": 7,
+        "type": "Motherboard",
+        "brand": "Gigabyte",
+        "model": "B560M DS3H",
+        "description": "The Gigabyte B560M DS3H is a reliable motherboard that provides essential features and compatibility for the Intel Core i5 1100K processor. It offers a stable platform for your work and studies PC build.",
+        "compatibility": "FCLGA1200",
+        "performanceRating": 8,
+        "price": 6495.0,
+        "img": "src/assets/img/Mobo/1.png",
+        "disabled": false
+      },
+      {
+        "id": 8,
+        "type": "Motherboard",
+        "brand": "ASUS",
+        "model": "ROG Strix Z490-E Gaming",
+        "description": "The ASUS ROG Strix Z490-E Gaming is a high-end motherboard designed for gaming enthusiasts. It offers advanced features, excellent performance, and extensive connectivity options for your gaming PC build.",
+        "compatibility": "FCLGA1200",
+        "performanceRating": 9,
+        "price": 18000.0,
+        "img": "src/assets/img/Mobo/2.png",
+        "disabled": false
+      },
+      {
+        "id": 9,
+        "type": "Motherboard",
+        "brand": "MSI",
+        "model": "MPG X570 Gaming Pro Carbon WiFi",
+        "description": "The MSI MPG X570 Gaming Pro Carbon WiFi is a feature-rich motherboard that supports the AMD Ryzen 9 5900X processor. It offers excellent connectivity options, advanced power delivery, and stability for editing-intensive workloads.",
+        "compatibility": "AM4",
+        "performanceRating": 9,
+        "price": 15000.0,
+        "img": "src/assets/img/Mobo/3.png",
+        "disabled": false
+      }
+    ],
+    "powersupply": [
+      {
+        "id": 19,
+        "type": "",
+        "brand": "",
+        "model": "Select Power Supply",
+        "description": "",
+        "socket": "",
+        "performanceRating": 0,
+        "price": 0,
+        "img": "src/assets/img/powersupply.png"
+      },
+      {
+        "id": 10,
+        "type": "Power Supply",
+        "brand": "Corsair",
+        "model": "CX550F",
+        "description": "The Corsair CX550F is a high-quality power supply unit designed to deliver reliable and efficient power to your PC components. With a maximum power output of 550W, it provides ample power for your system.",
+        "performanceRating": 8,
+        "price": 4450.0,
+        "img": "src/assets/img/Powersupply/1.png"
+      },
+      {
+        "id": 11,
+        "type": "Power Supply",
+        "brand": "Corsair",
+        "model": "RM750x",
+        "description": "The Corsair RM750x power supply is a reliable and efficient choice for your gaming PC. With its 750W power output, it provides sufficient power for your components and supports high-end GPUs.",
+        "performanceRating": 9,
+        "price": 8295.0,
+        "img": "src/assets/img/Powersupply/2.png"
+      },
+      {
+        "id": 12,
+        "type": "Power Supply",
+        "brand": "Seasonic",
+        "model": "Focus GX-1000",
+        "description": "The Seasonic Focus GX-1000 power supply is a high-quality unit suitable for editing PCs. With its 1000W power output, it provides ample power for the components, ensuring stability and efficiency during intense editing tasks.",
+        "performanceRating": 9,
+        "price": 9295.0,
+        "img": "src/assets/img/Powersupply/3.png"
+      }
+    ],
+    "ram": [
+      {
+        "id": 20,
+        "type": "",
+        "brand": "",
+        "model": "Select RAM",
+        "description": "",
+        "socket": "",
+        "performanceRating": 0,
+        "price": 0,
+        "img": "src/assets/img/ram.png"
+      },
+      {
+        "id": 13,
+        "type": "RAM",
+        "brand": "Kingston",
+        "model": "Fury Beast 8GB",
+        "description": "The Kingston Fury Beast 8GB RAM stick offers decent memory capacity for your work and studies tasks. It provides smooth performance and reliable multitasking capabilities.",
+        "capacity": "8GB",
+        "performanceRating": 6,
+        "price": 1295.0,
+        "img": "src/assets/img/RAM/1.png"
+      },
+      {
+        "id": 14,
+        "type": "RAM",
+        "brand": "Corsair",
+        "model": "Vengeance RGB Pro 32GB (2 x 16GB)",
+        "description": "The Corsair Vengeance RGB Pro 32GB RAM kit consists of two 16GB modules. It offers ample memory capacity for gaming, allowing smooth multitasking and providing headroom for future game releases.",
+        "capacity": "32GB (2 x 16GB)",
+        "performanceRating": 8,
+        "price": 7395.0,
+        "img": "src/assets/img/RAM/2.png"
+      },
+      {
+        "id": 15,
+        "type": "RAM",
+        "brand": "Corsair",
+        "model": "Vengeance RGB Pro 16GB (2 x 8GB)",
+        "description": "The Corsair Vengeance RGB Pro 16GB RAM kit consists of two 8GB modules. It offers fast and reliable memory performance, enabling smooth editing workflows and efficient handling of large media files.",
+        "capacity": "16GB (2 x 8GB)",
+        "performanceRating": 8,
+        "price": 4595.0,
+        "img": "src/assets/img/RAM/3.png"
+      }
+    ]
+  }
+}

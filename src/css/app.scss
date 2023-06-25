@@ -1,0 +1,96 @@
+// app global css in SCSS form
+body {
+  background-color: #01042c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.mont2 {
+  line-height: 1.5rem;
+}
+
+.mont3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.soulmaze {
+  font-family: "MADE soulmaze", sans-serif;
+}
+
+.select {
+  margin-left: 8.3%;
+  margin-right: 8.3%;
+}
+
+.pc {
+  width: 250px;
+}
+@media (max-width: 1024px) {
+  .navbar-title,
+  .for-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) {
+  .for-mobile {
+    display: none;
+  }
+}
+
+//epic transitions
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.pop {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
