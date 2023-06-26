@@ -473,7 +473,6 @@
 import { ref, computed, watch } from 'vue';
 import pcPartsData from '../Data/pcParts2.json';
 import { useRouter } from 'vue-router';
-import CardLoader from 'src/components/CardLoader.vue';
 
 //CPU
 const selectedCpu = ref(pcPartsData.custom.cpu[0]);

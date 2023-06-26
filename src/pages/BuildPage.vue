@@ -148,7 +148,6 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router';
 import pcPartsData from '../Data/pcParts2.json'
-import CardLoader from '../components/CardLoader.vue'
 
 
 //ROUTER
