@@ -3,10 +3,10 @@
     <div v-if="isLoading" class="row justify-center ">
       <q-spinner-tail class="q-mt-xl" color="secondary" size="6rem" />
     </div>
-    <div v-else class="text-secondary fade-in">
-      <div class="row justify-center">
-        <h3 class="soulmaze q-ma-none q-mb-md col-12 col-md-6 text-center">About</h3>
-        <q-card style="width: 50rem" square flat class="bg-primary text-body2 text-weight-medium col-12 col-md-6">
+    <div v-else class="text-secondary fade-in row justify-center">
+      <div>
+        <h3 class="soulmaze q-ma-none q-mb-md col-12 text-center">About</h3>
+        <q-card style="width: 50rem" square flat class="bg-primary text-body2 text-weight-medium col-12">
           <q-card-section>
             <p>
               PCBLDR is a passion project for the completion of COE 141 (Object Oriented Programming) instructed by Engr.
