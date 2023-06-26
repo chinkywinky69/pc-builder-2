@@ -4,8 +4,10 @@
     <q-header class="bg-secondary text-primary" height-hint="98">
       <q-toolbar class="q-pa-none">
         <q-toolbar-title class="row">
-          <img class="img" src="../assets/img/logo.png">
-          <h3 class="q-ma-none navbar-title soulmaze" style="margin-top: 20px;">PCBLDR</h3>
+          <q-item to="/" class="q-pa-none">
+            <img class="img" src="../assets/img/logo.png">
+            <h3 class="q-ma-none navbar-title soulmaze" style="margin-top: 20px;">PCBLDR</h3>
+          </q-item>
         </q-toolbar-title>
         <q-tabs v-if="showTabs" class="tabs q-mr-xl">
           <q-route-tab class="mont" to="/">Home</q-route-tab>
