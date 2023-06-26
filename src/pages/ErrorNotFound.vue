@@ -1,23 +1,15 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen bg-primary text-secondary text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
+      <div style="font-size: 10vh">
+        <img src="../assets/img/404.gif">
+      </div>
+      <div caption>404 page</div>
+      <div class="text-h3 soulmaze">
+        WHY ARE YOU HERE? <br /> 🤨🤨🤨
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
+      <q-btn class="q-mt-xl" color="secondary" text-color="primary" unelevated to="/" label="Go Home" no-caps />
     </div>
   </div>
 </template>

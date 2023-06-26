@@ -15,16 +15,8 @@
         <q-btn v-if="!showTabs" class="btn-toggler q-mr-md" dense flat round icon="menu" @click="toggleLeftDrawer" />
       </q-toolbar>
     </q-header>
-    <q-drawer class="q-drawer bg-dark text-white q-pt-md" show-if-above v-model="leftDrawerOpen" side="left">
-      <q-item class="q-mb-md">
-        <q-item-section avatar>
-          <q-avatar>
-            <img src="../assets/img/logo.png">
-          </q-avatar>
-        </q-item-section>
-        <q-item-section class="text-secondary">PCBLDR</q-item-section>
-      </q-item>
-      <q-separator color="secondary" class="q-mb-md" />
+    <q-drawer class="q-drawer bg-dark text-white q-pt-md" overlay show-if-above v-model="leftDrawerOpen" side="left">
+      <q-separator style="margin-top: 135px;" color="secondary" class="q-mb-sm" />
       <div style="margin-bottom: 300px" class="q-ml-sm">
         <q-item to="/" clickable v-ripple active-class="text-secondary">
           <q-item-section>
@@ -48,6 +40,14 @@
           <q-item-label class="q-mr-sm">&#169; PCBLDR - 2023</q-item-label>
         </q-item-section>
       </q-item>
+      <q-img class="absolute-top text-center" src="../assets/img/home.png" style="height: 150px">
+        <div class="absolute-bottom bg-transparent">
+          <q-avatar size="56px" class="q-mb-sm">
+            <img src="../assets/img/logo.png">
+          </q-avatar>
+          <div class="text-weight-bold q-mt-md q-mb-sm text-h5 text-secondary">PCBLDR</div>
+        </div>
+      </q-img>
     </q-drawer>
     <q-page-container>
       <router-view />
