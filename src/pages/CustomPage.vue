@@ -1,8 +1,10 @@
 <template>
   <q-page>
     <!-- CARDS -->
-    <CardLoader v-if="isLoading" />
-    <div v-else>
+    <div v-if="isLoading" class="row justify-center ">
+      <q-spinner-tail class="q-mt-xl" color="secondary" size="6rem" />
+    </div>
+    <div class="fade-in" v-else>
       <div>
         <div class="text-center text-secondary q-ma-lg for-desktop soulmaze">
           <h2 class="q-ma-none">select components</h2>
@@ -11,9 +13,111 @@
           <h4 class="q-ma-none">select components</h4>
         </div>
       </div>
-      <div class="row justify-center">
+      <div class="row justify-center for-mobile">
+        <q-scroll-area dark class="col-12" style="height: 320px; max-width: 800px;">
+          <div class="row no-wrap" v-for="r in 1" :key="'r' + r">
+            <!-- CPU -->
+            <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
+              <q-card-section>
+                <q-select autofocus v-model="selectedCpu" :options="optionsCpu" bg-color="secondary" color="secondary"
+                  option-label="model" option-value="id" dense options-dark options-dense outlined square></q-select>
+              </q-card-section>
+              <q-card-section v-if="selectedCpuInfo">
+                <div class="text-center">
+                  <img :src="selectedCpuInfo.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{
+                  selectedCpuInfo.type }}</p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ selectedCpuInfo.brand }} {{
+                  selectedCpuInfo.model }}</p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{
+                  formatCurrency(selectedCpuInfo.price) }}</p>
+              </q-card-section>
+            </q-card>
+            <!-- GPU -->
+            <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
+              <q-card-section>
+                <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
+                  v-model="selectedGpu" :options="optionsGpu" option-value="id" option-label="model"></q-select>
+              </q-card-section>
+              <q-card-section v-if="selectedGpuInfo">
+                <div class="text-center">
+                  <img :src="selectedGpuInfo.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{ selectedGpuInfo.type }}
+                </p>
+                <p class="text-center text-primary text-subtitle q-ma-none"> {{ selectedGpuInfo.brand }} {{
+                  selectedGpuInfo.model }} </p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ formatCurrency(selectedGpuInfo.price) }}
+                </p>
+              </q-card-section>
+            </q-card>
+            <!-- MOBO -->
+            <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
+              <q-card-section>
+                <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
+                  v-model="selectedMobo" :options="optionsMobo" option-value="id" option-label="model"></q-select>
+              </q-card-section>
+              <q-card-section v-if="selectedMoboInfo">
+                <div class="text-center">
+                  <img :src="selectedMoboInfo.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{ selectedMoboInfo.type }}
+                </p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ selectedMoboInfo.brand }} {{
+                  selectedMoboInfo.model }}</p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ formatCurrency(selectedMoboInfo.price) }}
+                </p>
+              </q-card-section>
+            </q-card>
+
+            <!-- POWERSUPPLY -->
+            <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
+              <q-card-section>
+                <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
+                  v-model="selectedPowersupply" :options="optionsPowersupply" option-value="id"
+                  option-label="model"></q-select>
+              </q-card-section>
+              <q-card-section v-if="selectedPowersupplyInfo">
+                <div class="text-center">
+                  <img :src="selectedPowersupplyInfo.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{
+                  selectedPowersupplyInfo.type
+                }}
+                </p>
+                <p class="text-center text-primary text-subtitle q-ma-none"> {{ selectedPowersupplyInfo.brand }} {{
+                  selectedPowersupplyInfo.model }} </p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{
+                  formatCurrency(selectedPowersupplyInfo.price)
+                }} </p>
+              </q-card-section>
+            </q-card>
+            <!-- RAM -->
+            <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
+              <q-card-section>
+                <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
+                  v-model="selectedRam" :options="optionsRam" option-value="id" option-label="model"></q-select>
+              </q-card-section>
+              <q-card-section v-if="selectedRamInfo">
+                <div class="text-center">
+                  <img :src="selectedRamInfo.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{ selectedRamInfo.type
+                }}
+                </p>
+                <p class="text-center text-primary text-subtitle q-ma-none"> {{ selectedRamInfo.brand }} {{
+                  selectedRamInfo.model }} </p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ formatCurrency(selectedRamInfo.price) }}
+                </p>
+              </q-card-section>
+            </q-card>
+          </div>
+        </q-scroll-area>
+      </div>
+      <div class="row justify-center for-desktop">
         <!-- CPU -->
-        <q-card square class="col-md-2 bg-secondary q-ma-sm" style="max-width: 15rem;">
+        <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
           <q-card-section>
             <q-select autofocus v-model="selectedCpu" :options="optionsCpu" bg-color="secondary" color="secondary"
               option-label="model" option-value="id" dense options-dark options-dense outlined square></q-select>
@@ -31,7 +135,7 @@
           </q-card-section>
         </q-card>
         <!-- GPU -->
-        <q-card square class="col-md-2 bg-secondary q-ma-sm" style="max-width: 15rem;">
+        <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
           <q-card-section>
             <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
               v-model="selectedGpu" :options="optionsGpu" option-value="id" option-label="model"></q-select>
@@ -47,7 +151,7 @@
           </q-card-section>
         </q-card>
         <!-- MOBO -->
-        <q-card square class="col-md-2 bg-secondary q-ma-sm" style="max-width: 15rem;">
+        <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
           <q-card-section>
             <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
               v-model="selectedMobo" :options="optionsMobo" option-value="id" option-label="model"></q-select>
@@ -64,7 +168,7 @@
         </q-card>
 
         <!-- POWERSUPPLY -->
-        <q-card square class="col-md-2 bg-secondary q-ma-sm" style="max-width: 15rem;">
+        <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
           <q-card-section>
             <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
               v-model="selectedPowersupply" :options="optionsPowersupply" option-value="id"
@@ -84,7 +188,7 @@
           </q-card-section>
         </q-card>
         <!-- RAM -->
-        <q-card square class="col-md-2 bg-secondary q-ma-sm" style="max-width: 15rem;">
+        <q-card square class="col-md-2 col-12 bg-secondary q-ma-sm" style="max-width: 15rem;">
           <q-card-section>
             <q-select dense square color="secondary" bg-color="secondary" outlined options-dark options-dense
               v-model="selectedRam" :options="optionsRam" option-value="id" option-label="model"></q-select>
@@ -485,12 +589,12 @@ const closePopUp = () => {
 const helper = ref(false);
 setTimeout(() => {
   helper.value = true
-}, 4000)
+}, 3000)
 
 //LOADERS
 const isLoading = ref(true);
 setTimeout(() => {
   isLoading.value = false
-}, 2000)
+}, 1000)
 
 </script>

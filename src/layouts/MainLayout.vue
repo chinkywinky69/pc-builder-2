@@ -66,6 +66,7 @@ const toggleLeftDrawer = () => {
 }
 
 onMounted(() => {
+  leftDrawerOpen.value = false
   const mediaQuery = window.matchMedia('(max-width: 1024px)')
 
   const handleMediaQuery = (mq) => {
@@ -75,7 +76,6 @@ onMounted(() => {
   handleMediaQuery(mediaQuery)
   mediaQuery.addEventListener('change', handleMediaQuery)
 
-  leftDrawerOpen.value = false
 })
 </script>
 

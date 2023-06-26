@@ -1,7 +1,9 @@
 <template>
   <q-page>
     <!-- CARDS -->
-    <CardLoader class="fade-in" v-if="isLoading" />
+    <div v-if="isLoading" class="row justify-center ">
+      <q-spinner-tail class="q-mt-xl" color="secondary" size="6rem" />
+    </div>
     <div v-else class="fade-in">
       <div>
         <div class="text-center text-secondary q-ma-lg for-desktop soulmaze">
@@ -11,7 +13,24 @@
           <h4 class="q-ma-none">select PC Type</h4>
         </div>
       </div>
-      <div class="row justify-center">
+      <div class="row justify-center for-mobile">
+        <q-scroll-area dark class="col-12" style="height: 280px; max-width: 800px;">
+          <div class="row no-wrap" v-for="r in 1" :key="'r' + r">
+            <q-card square v-for="part in filteredParts.parts" :key="part.id" class="col-md-2 col-12 bg-secondary q-ma-sm"
+              style="max-width: 15rem;">
+              <q-card-section>
+                <div class="text-center">
+                  <img :src="part.img" width="130">
+                </div>
+                <p class="text-center text-primary text-h5 text-weight-bold q-ma-none q-mb-sm">{{ part.type }}</p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ part.brand }} {{ part.model }}</p>
+                <p class="text-center text-primary text-subtitle q-ma-none">{{ formatCurrency(part.price) }}</p>
+              </q-card-section>
+            </q-card>
+          </div>
+        </q-scroll-area>
+      </div>
+      <div class="row justify-center for-desktop">
         <q-card square v-for="part in filteredParts.parts" :key="part.id" class="col-md-2 col-12 bg-secondary q-ma-sm"
           style="max-width: 15rem;">
           <q-card-section>
@@ -90,7 +109,7 @@
             <div class="col-12 col-md-6" v-for="part in selectedParts" :key="part.id">
               <q-item class="text-secondary row justify-center">
                 <q-item-section top class="q-ml-none col-auto">
-                  <img width="140" :src="part.img">
+                  <img width="120" :src="part.img">
                 </q-item-section>
                 <q-item-section class="col-12 col-md-8 row justify-center">
                   <div>
@@ -203,7 +222,7 @@ onMounted(() => {
 const isLoading = ref(true);
 setTimeout(() => {
   isLoading.value = false
-}, 2000)
+}, 1000)
 
 </script>
 
