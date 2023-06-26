@@ -4,16 +4,6 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: () => import("pages/HomePage.vue"), name: "home" },
-      {
-        path: "/about",
-        component: () => import("pages/AboutPage.vue"),
-        name: "about",
-      },
-      {
-        path: "/build/custom",
-        component: () => import("pages/CustomPage.vue"),
-        name: "custom",
-      },
     ],
   },
   {
@@ -26,7 +16,7 @@ const routes = [
         name: "build",
       },
       {
-        path: "/build/custom",
+        path: "/custom",
         component: () => import("pages/CustomPage.vue"),
         name: "custom",
       },
@@ -43,9 +33,7 @@ const routes = [
       },
     ],
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
+  //404 ERROR PAGE
   {
     path: "/:catchAll(.*)*",
     component: () => import("pages/ErrorNotFound.vue"),
