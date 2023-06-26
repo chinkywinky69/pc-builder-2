@@ -205,7 +205,7 @@ const viewDetails = (part) => {
 //REDIRECT TO THE CUSTOM PAGE IF CUSTOM IS SELECTED
 watch(select, (newValue) => {
   if (newValue === 'Custom') {
-    router.push('/build/custom');
+    router.push('/custom');
   }
 });
 
