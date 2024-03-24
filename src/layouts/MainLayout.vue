@@ -6,7 +6,7 @@
         <q-toolbar-title class="row">
           <q-item to="/" class="q-pa-none">
             <q-img width="50px" src="pictures/logo.png" />
-            <h3 class="q-ma-none navbar-title soulmaze" style="margin-top: 20px;">PCBLDR</h3>
+            <h3 class="q-ma-none q-py-sm navbar-title soulmaze">PCBLDR</h3>
           </q-item>
         </q-toolbar-title>
         <q-tabs v-if="showTabs" class="tabs q-mr-xl">

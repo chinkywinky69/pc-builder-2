@@ -77,7 +77,7 @@ const scrollToTop = () => {
 
 <style scoped>
 .section-1 {
-  background-image: url("pictures/home.png");
+  background-image: url("src/pics/home.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

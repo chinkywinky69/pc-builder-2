@@ -147,7 +147,7 @@
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router';
-import pcPartsData from '../data/pcParts2.json'
+import pcPartsData from '../../public/data/pcParts2.json'
 
 
 //ROUTER

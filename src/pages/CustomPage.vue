@@ -471,7 +471,7 @@
 
 <script setup>
 import { ref, computed, watch } from 'vue';
-import pcPartsData from '../data/pcParts2.json';
+import pcPartsData from '../../public/data/pcParts2.json'
 import { useRouter } from 'vue-router';
 
 //CPU
