@@ -1,23 +1,25 @@
+import BuildPageVue from "../pages/BuildPage.vue";
+import CustomPageVue from "../pages/CustomPage.vue";
+import HomePageVue from "../pages/HomePage.vue";
+import AboutPageVue from "../pages/AboutPage.vue";
 const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
-    children: [
-      { path: "", component: () => import("pages/HomePage.vue"), name: "home" },
-    ],
+    children: [{ path: "", component: HomePageVue, name: "home" }],
   },
   {
     path: "/build",
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
-        path: "/build",
-        component: () => import("pages/BuildPage.vue"),
+        path: "",
+        component: BuildPageVue,
         name: "build",
       },
       {
         path: "/custom",
-        component: () => import("pages/CustomPage.vue"),
+        component: CustomPageVue,
         name: "custom",
       },
     ],
@@ -27,8 +29,8 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
-        path: "/about",
-        component: () => import("pages/AboutPage.vue"),
+        path: "",
+        component: AboutPageVue,
         name: "about",
       },
     ],

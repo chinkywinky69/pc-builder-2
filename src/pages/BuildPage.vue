@@ -53,7 +53,7 @@
                 options-dense :options="options">
                 <template v-slot:append>
                   <q-avatar>
-                    <img src="../assets/img/logo.png">
+                    <img src="pictures/logo.png">
                   </q-avatar>
                 </template>
               </q-select>
@@ -72,7 +72,7 @@
         <div style="max-width:15rem" class="col-auto q-pa-none q-mb-lg bg-secondary for-desktop">
           <q-card square flat class="bg-primary text-secondary q-ma-sm">
             <q-card-section class="text-center">
-              <img class="fit" src="../assets/img/pc3.png" alt="">
+              <img class="fit" src="pictures/pc3.png" alt="">
               <q-btn class="bg-primary text-secondary text-weight-bold q-mt-sm" @click="viewDetails(filteredParts.parts)"
                 flat label="VIEW DETAILS" />
             </q-card-section>
@@ -81,7 +81,7 @@
         <div class="col-12 q-pa-none q-mb-lg bg-secondary for-mobile">
           <q-card square flat class="bg-primary text-secondary q-ma-sm">
             <q-card-section class="text-center">
-              <img class="fit" src="../assets/img/pc3.png" alt="">
+              <img class="fit" src="pictures/pc3.png" alt="">
               <q-btn class="bg-primary text-secondary text-weight-bold q-mt-sm" @click="viewDetails(filteredParts.parts)"
                 flat label="VIEW DETAILS" />
             </q-card-section>
@@ -147,7 +147,7 @@
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router';
-import pcPartsData from '../Data/pcParts2.json'
+import pcPartsData from '../data/pcParts2.json'
 
 
 //ROUTER

@@ -56,7 +56,7 @@
         </div>
         <div fit="fill" class="col-12 col-md-6 bg-secondary q-pa-lg">
           <q-card square>
-            <img src="../assets/img/why.png">
+            <img src="pictures/why.png">
           </q-card>
         </div>
         <div class="q-mt-xl">
@@ -77,7 +77,7 @@ const scrollToTop = () => {
 
 <style scoped>
 .section-1 {
-  background-image: url("../assets/img/home.png");
+  background-image: url("pictures/home.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

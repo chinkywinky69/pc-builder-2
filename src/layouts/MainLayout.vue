@@ -5,7 +5,7 @@
       <q-toolbar class="q-pa-none">
         <q-toolbar-title class="row">
           <q-item to="/" class="q-pa-none">
-            <img class="img" src="../assets/img/logo.png">
+            <q-img width="50px" src="pictures/logo.png" />
             <h3 class="q-ma-none navbar-title soulmaze" style="margin-top: 20px;">PCBLDR</h3>
           </q-item>
         </q-toolbar-title>
@@ -42,10 +42,10 @@
           <q-item-label class="q-mr-sm">&#169; PCBLDR - 2023</q-item-label>
         </q-item-section>
       </q-item>
-      <q-img class="absolute-top text-center" src="../assets/img/home.png" style="height: 150px">
+      <q-img class="absolute-top text-center" src="pictures/home.png" style="height: 150px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
-            <img src="../assets/img/logo.png">
+            <img src="pictures/logo.png">
           </q-avatar>
           <div class="text-weight-bold q-mt-md q-mb-sm text-h5 text-secondary">PCBLDR</div>
         </div>
@@ -80,9 +80,3 @@ onMounted(() => {
 
 })
 </script>
-
-<style scoped>
-.img {
-  width: 90px;
-}
-</style>

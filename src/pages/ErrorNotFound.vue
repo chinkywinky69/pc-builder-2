@@ -2,7 +2,7 @@
   <div class="fullscreen bg-primary text-secondary text-center q-pa-md flex flex-center">
     <div>
       <div style="font-size: 10vh">
-        <img src="../assets/img/404.gif">
+        <img src="pictures/404.gif">
       </div>
       <div caption>404 page</div>
       <div class="text-h3 soulmaze">
